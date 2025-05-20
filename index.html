@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is a solution to the Results summary component challenge on Frontend Mentor.">
+  <meta name="keywords" content="Frontend Mentor, HTML, TailwindCSS, JavaScript">
+  <meta name="author" content="Valeria Montoya">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="/assets/output.css">
+  <script defer src="/js/main.js"></script>
+
+  <title>Frontend Mentor | Results summary component</title>
+</head>
+
+<body class="flex min-h-screen flex-col items-center justify-center bg-cobalt-blue-50 font-hanken-grotesk">
+  <!-- Main Container -->
+  <main class="flex flex-col md:flex-row md:rounded-4xl w-full md:w-[676px] bg-white shadow-xl">
+
+    <!-- Results Section -->
+    <section
+      class="flex w-full md:w-1/2 flex-col items-center justify-center gap-8 rounded-b-4xl md:rounded-4xl bg-gradient-to-b from-light-slate-blue to-light-royal-blue px-14 py-8 md:px-16 md:py-11">
+      <h1 class="text-navy-200 text-lg md:text-2xl font-bold">Your Result</h1>
+
+      <!-- Score Circle -->
+      <div
+        class="gap-2 flex flex-col justify-center items-center w-48 h-48 rounded-full bg-gradient-to-b from-violet-blue to-persian-blue">
+        <span class="text-white text-6xl md:text-7xl font-extrabold">76</span>
+        <span class="text-navy-200 md:text-lg font-bold">of 100</span>
+      </div>
+
+      <!-- Result Description -->
+      <div class="text-center">
+        <p class="text-white text-2xl md:text-3xl font-bold mb-4">Great</p>
+        <p class="text-navy-200 md:text-lg font-medium">You scored higher than 65% of the people who have taken these
+          tests.
+        </p>
+      </div>
+    </section>
+
+    <!-- Summary Section -->
+    <section class="w-full md:w-1/2 p-8 md:p-11 flex flex-col gap-8">
+      <h2 class="text-navy-950 text-lg md:text-2xl font-bold">Summary</h2>
+
+      <!-- Score List -->
+      <ul class="flex flex-col gap-4 md:text-lg font-bold">
+        <!-- Reaction Score -->
+        <li class="flex justify-between bg-light-red-50 px-4 py-4 rounded-xl">
+          <div class="flex gap-4">
+            <img id="icon" alt="Reaction icon">
+            <span class="text-light-red-400 font-medium" id="category"></span>
+          </div>
+          <div>
+            <span class="text-navy-950" id="score"></span> <span class="text-navy-400">/ 100</span>
+          </div>
+        </li>
+
+        <!-- Memory Score -->
+        <li class="flex justify-between bg-orangey-yellow-50 px-4 py-4 rounded-xl">
+          <div class="flex gap-4">
+            <img id="icon" alt="Memory icon">
+            <span class="text-orangey-yellow-400 font-medium" id="category"></span>
+          </div>
+          <div>
+            <span class="text-navy-950" id="score"></span> <span class="text-navy-400">/ 100</span>
+          </div>
+        </li>
+
+        <!-- Verbal score -->
+        <li class="flex justify-between bg-green-teal-50 px-4 py-4 rounded-xl">
+          <div class="flex gap-4">
+            <img id="icon" alt="Verbal icon">
+            <span class="text-green-teal-500 font-medium" id="category"></span>
+          </div>
+          <div>
+            <span class="text-navy-950" id="score"></span> <span class="text-navy-400">/ 100</span>
+          </div>
+        </li>
+
+        <!-- Visual score -->
+        <li class="flex justify-between bg-cobalt-blue-50 p-4 rounded-xl">
+          <div class="flex gap-4">
+            <img id="icon" alt="Visual icon">
+            <span class="text-cobalt-blue-800 font-medium" id="category"></span>
+          </div>
+          <div>
+            <span class="text-navy-950" id="score"></span> <span class="text-navy-400">/ 100</span>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Action Button -->
+      <button
+        class="text-white bg-navy-950 text-lg font-bold w-full py-4 rounded-4xl hover:cursor-pointer hover:bg-gradient-to-b from-light-slate-blue to-light-royal-blue">Continue</button>
+    </section>
+  </main>
+</body>
+
+</html>
